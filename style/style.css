@@ -7,11 +7,11 @@
     padding: 0;
 }
 
-/* .clearfix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
-} */
+}
 
 body {
     margin: 0;
@@ -20,10 +20,12 @@ body {
 
 nav {
     float: right;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: fixed;
     display: flex;
     width: 100vw;
+    height: 30vh;
+    margin: 20px;
 }
 
 a {
@@ -31,7 +33,6 @@ a {
 }
 
 header {
-    padding: 40px 30px;
     background-color: transparent;
 }
 
@@ -44,10 +45,16 @@ header {
     display: inline-block;
     text-align: center;
     border: 1px solid #000;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(0 0 0 / 0.2);
 }
 
 a#second-type > div.circle  {
     margin: 0 20px;
+}
+
+div.circle:hover {
+    background-color: transparent;
 }
 
 section {
